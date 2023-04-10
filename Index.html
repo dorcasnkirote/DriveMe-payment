@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Daraja API Integration</title>
+    <title>Pay Up</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Daraja API Integration</h1>
+    <fieldset>
+
+      <h1>Pay for the hired car:</h1>
     <form method="post" action="stkpush.php">
-      <p>Please enter your phone number:</p>
-      <input type="text" name="phone_number">
-      <input type="submit" value="Submit">
+      <h3>Enter amount:</h3>
+      <label for="price">Amount in Ksh:</label>
+      <input type="text" name="price"><br><br>
+      <label for="phone">Phone number (start 254): </label>
+      <input type="text" name="phone_number" id="phone">
+
+     
+      <p>Once you submit your Payment details, a message will pop up on your phone screen asking you to enter your pin to complete payment.Thank you in advance for trusting our services!</p>
+      <input type="submit" name="Pay"value="Submit">
+      
     </form>
+
+    </fieldset>
+    
   </body>
 </html>

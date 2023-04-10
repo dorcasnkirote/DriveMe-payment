@@ -1,5 +1,4 @@
-<?php 
-
+<?php
 
 include('accessToken.php');
 
@@ -11,10 +10,10 @@ $BusinessShortCode = '174379';
 $Timestamp = date('YmdHis');
 $Password = base64_encode($BusinessShortCode . $passkey . $Timestamp);
 $phone = $_POST['phone_number'];
-$money = '60';
+$money = $_POST['price'];
 $PartyA = $phone;
 $PartyB = '254115626708';
-$AccountReference = 'Doro Wa Bass Anainama';
+$AccountReference = 'Doro  cAnainama';
 $TransactionDesc = 'stkpush test';
 $Amount = $money;
 $stkpushheader = ['Content-Type:application/json', 'Authorization:Bearer ' . $access_token];
